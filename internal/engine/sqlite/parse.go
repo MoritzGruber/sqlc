@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/MoritzGruber/sqlc/internal/engine/sqlite/parser"
+	"github.com/MoritzGruber/sqlc/internal/source"
+	"github.com/MoritzGruber/sqlc/internal/sql/ast"
 	"github.com/antlr4-go/antlr/v4"
-	"github.com/sqlc-dev/sqlc/internal/engine/sqlite/parser"
-	"github.com/sqlc-dev/sqlc/internal/source"
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
 )
 
 type errorListener struct {

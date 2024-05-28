@@ -12,7 +12,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/sqlc-dev/sqlc/internal/sqltest/local"
+	"github.com/MoritzGruber/sqlc/internal/sqltest/local"
 )
 
 func join(vals ...string) sql.NullString {

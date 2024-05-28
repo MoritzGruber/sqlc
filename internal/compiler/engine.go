@@ -4,16 +4,16 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/sqlc-dev/sqlc/internal/analyzer"
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/engine/dolphin"
-	"github.com/sqlc-dev/sqlc/internal/engine/postgresql"
-	pganalyze "github.com/sqlc-dev/sqlc/internal/engine/postgresql/analyzer"
-	"github.com/sqlc-dev/sqlc/internal/engine/sqlite"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/quickdb"
-	pb "github.com/sqlc-dev/sqlc/internal/quickdb/v1"
-	"github.com/sqlc-dev/sqlc/internal/sql/catalog"
+	"github.com/MoritzGruber/sqlc/internal/analyzer"
+	"github.com/MoritzGruber/sqlc/internal/config"
+	"github.com/MoritzGruber/sqlc/internal/engine/dolphin"
+	"github.com/MoritzGruber/sqlc/internal/engine/postgresql"
+	pganalyze "github.com/MoritzGruber/sqlc/internal/engine/postgresql/analyzer"
+	"github.com/MoritzGruber/sqlc/internal/engine/sqlite"
+	"github.com/MoritzGruber/sqlc/internal/opts"
+	"github.com/MoritzGruber/sqlc/internal/quickdb"
+	pb "github.com/MoritzGruber/sqlc/internal/quickdb/v1"
+	"github.com/MoritzGruber/sqlc/internal/sql/catalog"
 )
 
 type Compiler struct {

@@ -110,7 +110,7 @@ In the simplest case, you can use psql to poke around:
 psql $(sqlc createdb)
 ```
 
-Or if you're tired of waiting for us to resolve https://github.com/sqlc-dev/sqlc/issues/296,
+Or if you're tired of waiting for us to resolve https://github.com/MoritzGruber/sqlc/issues/296,
 you can create databases ad hoc to use with pgtyped:
 
 ```shell

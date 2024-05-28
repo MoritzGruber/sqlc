@@ -11,7 +11,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgtype"
 
-	"github.com/sqlc-dev/sqlc/internal/sqltest/local"
+	"github.com/MoritzGruber/sqlc/internal/sqltest/local"
 )
 
 func TestBatchBooks(t *testing.T) {

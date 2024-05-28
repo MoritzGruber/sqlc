@@ -21,16 +21,16 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/debug"
-	"github.com/sqlc-dev/sqlc/internal/migrations"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/plugin"
-	"github.com/sqlc-dev/sqlc/internal/quickdb"
-	pb "github.com/sqlc-dev/sqlc/internal/quickdb/v1"
-	"github.com/sqlc-dev/sqlc/internal/shfmt"
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlpath"
-	"github.com/sqlc-dev/sqlc/internal/vet"
+	"github.com/MoritzGruber/sqlc/internal/config"
+	"github.com/MoritzGruber/sqlc/internal/debug"
+	"github.com/MoritzGruber/sqlc/internal/migrations"
+	"github.com/MoritzGruber/sqlc/internal/opts"
+	"github.com/MoritzGruber/sqlc/internal/plugin"
+	"github.com/MoritzGruber/sqlc/internal/quickdb"
+	pb "github.com/MoritzGruber/sqlc/internal/quickdb/v1"
+	"github.com/MoritzGruber/sqlc/internal/shfmt"
+	"github.com/MoritzGruber/sqlc/internal/sql/sqlpath"
+	"github.com/MoritzGruber/sqlc/internal/vet"
 )
 
 var ErrFailedChecks = errors.New("failed checks")

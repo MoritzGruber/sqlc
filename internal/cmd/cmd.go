@@ -17,11 +17,11 @@ import (
 	"github.com/spf13/pflag"
 	"gopkg.in/yaml.v3"
 
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/debug"
-	"github.com/sqlc-dev/sqlc/internal/info"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/tracer"
+	"github.com/MoritzGruber/sqlc/internal/config"
+	"github.com/MoritzGruber/sqlc/internal/debug"
+	"github.com/MoritzGruber/sqlc/internal/info"
+	"github.com/MoritzGruber/sqlc/internal/opts"
+	"github.com/MoritzGruber/sqlc/internal/tracer"
 )
 
 func init() {
@@ -190,7 +190,7 @@ func getConfigPath(stderr io.Writer, f *pflag.Flag) (string, string) {
 
 var genCmd = &cobra.Command{
 	Use:   "generate",
-	Short: "Generate source code from SQL",
+	Short: "Generate source code (this is my fork) from SQL",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		defer trace.StartRegion(cmd.Context(), "generate").End()
 		stderr := cmd.ErrOrStderr()

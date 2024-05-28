@@ -7,9 +7,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sqlc-dev/sqlc/internal/bundler"
-	"github.com/sqlc-dev/sqlc/internal/quickdb"
-	quickdbv1 "github.com/sqlc-dev/sqlc/internal/quickdb/v1"
+	"github.com/MoritzGruber/sqlc/internal/bundler"
+	"github.com/MoritzGruber/sqlc/internal/quickdb"
+	quickdbv1 "github.com/MoritzGruber/sqlc/internal/quickdb/v1"
 )
 
 func init() {
